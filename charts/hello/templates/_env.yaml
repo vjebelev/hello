@@ -1,0 +1,7 @@
+{{- define "env" -}}
+- name: SECRET_KEY_BASE
+  valueFrom:
+    secretKeyRef:
+      name: hello-secret
+      key: secret-key-base
+{{- end -}}
