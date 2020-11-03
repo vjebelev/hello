@@ -1,7 +1,6 @@
 ---
 title: "How to deploy Elixir release to kubernetes, using Helm"
 date: 2020-11-01T21:34:57-05:00
-draft: true
 ---
 
 This git repo is a companion to [my blog post about deploying an Elixir app to kubernetes](http://blog.jebelev.com/posts/elixir-helm-gcloud-deploy/).
@@ -500,7 +499,7 @@ $ kubectl exec another-pod -i -t -- curl http://hello
 </html>
 ```
 
-This is it, we deployed a Phoenix server on a kubernetes cluster. When you want to redeploy the server, use `helm upgrade` command instead. All of these steps are typically automated so you only need to run a deploy script after committing the changes, and the code is redeployed on the cluster. But it's good to know exactly what is happening underneath all the automation. 
+This is it, we deployed a Phoenix server on a kubernetes cluster. When you want to redeploy the server, use `helm upgrade` command instead. All of these steps are typically automated so you only need to run a deploy script after committing the changes, and the code is redeployed on the cluster. But it's good to know exactly what is happening underneath all the automation. You can find all the code for this app at [https://github.com/vjebelev/hello](https://github.com/vjebelev/hello).
 
 
 
